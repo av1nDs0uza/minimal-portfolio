@@ -32,8 +32,7 @@ function Contact() {
       <div className="flex justify-center items-center">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col w-full md:w-7/12"
-        >
+          className="flex flex-col w-full md:w-7/12 p-4 border-4 border-black bg-gray-50 dark:bg-gray-800 shadow-[6px_6px_0_#333]">
           <Title>Contact</Title>
           <input
             type="text"
@@ -41,27 +40,27 @@ function Contact() {
             value={name}
             onChange={e => setName(e.target.value)}
             placeholder="Name"
-            className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
+            className="p-3 bg-gray-100 dark:bg-gray-700 border-4 border-black focus:outline-none focus:bg-yellow-200 dark:focus:bg-yellow-600 transition-all mb-4 shadow-[4px_4px_0_#333]"
           />
           <input
-            type="text"
+            type="email"
             name="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
             placeholder="Email"
-            className="my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none"
+            className="p-3 bg-gray-100 dark:bg-gray-700 border-4 border-black focus:outline-none focus:bg-yellow-200 dark:focus:bg-yellow-600 transition-all mb-4 shadow-[4px_4px_0_#333]"
           />
           <textarea
             name="message"
             value={message}
             onChange={e => setMessage(e.target.value)}
             placeholder="Message"
-            rows="10"
-            className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
+            rows="5"
+            className="p-3 bg-gray-100 dark:bg-gray-700 border-4 border-black focus:outline-none focus:bg-yellow-200 dark:focus:bg-yellow-600 transition-all mb-4 shadow-[4px_4px_0_#333]"
           />
           <button
             type="submit"
-            className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-yellow-500 to-pink-500 drop-shadow-md hover:stroke-white"
+            className="px-8 py-3 mt-4 font-semibold text-white bg-gradient-to-r from-yellow-400 to-pink-500 border-4 border-black shadow-[6px_6px_0_#333] transform hover:scale-105 transition-transform"
           >
             Work With Me
           </button>
